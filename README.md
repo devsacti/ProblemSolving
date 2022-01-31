@@ -1,18 +1,10 @@
 # My Problem Solving cycle : step 1 => 2 => 3 => 1
 
-ps1 : Comprehension about Problem
+[ps1](https://github.com/devsacti/ProblemSolving/blob/main/ps1.md) : Comprehension about Problem
 
- ↓
+[ps2](https://github.com/devsacti/ProblemSolving/blob/main/ps2.md) : Applying computer algorithms to Comprehension
 
-ps2 : Applying computer algorithms to Comprehension
-
- ↓
-
-ps3 : implemetation
-
- ↓
-
-ps1
+[ps3](https://github.com/devsacti/ProblemSolving/blob/main/ps3.md) : implemetation
 
 
 ## major PS practice
