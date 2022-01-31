@@ -1,0 +1,81 @@
+1.problem reference
+ algorithmjobs_level8_0105
+
+2.core algorithm, language
+ bruteforce
+
+ python
+
+3.time complexity
+
+4. ps ; accuracy, utilizing&Integrating algorithm, implementation
+
+## template
+
+def judge(result,depth,inequals):
+  window=result[depth-1]+inequals[depth]+result[depth]
+  return eval(window)
+
+def bruteforce(result,depth,limit, inequals):
+  global maxnum,minnum
+  global maxnumString,minnumString
+  
+  if(depth>=limit):
+    # print('arrive')
+    valString=''.join(result)
+    valInt=int(valString)
+    # print(val)
+    if(valInt>maxnum):
+      maxnum=valInt
+      maxnumString=valString
+      
+    if(valInt<minnum):
+      minnum=valInt
+      minnumString=valString
+
+  else:
+    for numchar in '0123456789':
+      # cpp의 경우, usednum 배열 필요할것으로보임
+      if(numchar not in result): result[depth]=numchar
+      else: continue
+    
+      # print('-'*depth)
+      # print(' '*depth,end='')
+      # print('given',result)
+      # print(' '*depth,end='')
+      # print('depth',depth)
+
+      if(depth==0):
+        bruteforce(result[:],depth+1,limit, inequals)
+      else:
+        token=judge(result,depth,inequals)
+        # print(' '*depth,end='')
+        # print('token',token)
+        if(token):
+          bruteforce(result[:],depth+1,limit, inequals)
+        else:
+          pass
+        
+      result[depth]='*'
+      # print(' '*depth,end='')
+      # print('remove',result)
+
+if __name__=="__main__":
+  n=int(input())
+  # NOT INDEX OF COMPUTER FOR PROCESS
+  inequals=[0]+input().split()
+  # print(inequals)
+  
+  result=['*']*(n+1)
+  depth=0
+  maxnum=-1
+  maxnumString=''
+  minnum=1e100
+  minnumString=''
+  # print('start and depth',result,'/',depth)
+  
+  bruteforce(result,depth,(n+1),inequals)
+  
+  print(maxnumString)
+  print(minnumString)
+  # print('ck')

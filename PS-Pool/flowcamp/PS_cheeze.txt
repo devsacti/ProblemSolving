@@ -1,0 +1,34 @@
+1.problem reference
+ algorithmjobs lms
+
+2.core algorithm, language
+ bfs
+
+ python
+
+3.time complexity
+
+4. ps ; accuracy, utilizing&Integrating algorithm, implementation
+
+공기중에 노출된 곳을 찾는것
+
+##
+공간으로부터
+치즈, IN,OUT를 좌표의 모음으로 각자 객체화해서 분리하라!
+그리고 그 주변부가 1개라도 노출되면 삭제~
+=> 리스트나 딕셔너리로 객체화 여기선 리스트
+
+* IN, OUT 은 무엇으로 판별했는가?
+dfs로 경계밖에 도달하면 OUT!
+
+*dfs는 외부인접토큰을 아규먼트로 받아야하고, bfs는 내부 선언이 가능하다,
+이렇듯, bfs는 while문 내에서 로직이 끝나니까, division이 잘보임,
+dfs는 재귀로 전체함수가 반복되서 조금 변형이 어렵지만 또, 필요
+
+왜냐하면 특정 노드가 경계선 밖으로 나갈수있다면 일단 In이 아니고,
+한편 이 노드와 '연결된' 노드들은 모두 In이 아니니까
+
+마치 미로의 출구와 연결된 길들 처럼
+
+bfs/dfs로 인접군을 만들수있다. 정확히 외부임이 명시된 기준이 있다면 그 점 인접노드들로 바로묶겠지만
+현재의 경우, '지나온 노드들'을 저장하고, 만약 그 노드들 중 1개라도 외부와 인접시로 판단해야한다.

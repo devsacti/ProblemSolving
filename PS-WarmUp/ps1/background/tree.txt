@@ -1,0 +1,16 @@
+# tree 관련 comprehension point
+1. 인풋을 트리 규칙에 따라 주는가? 아니라면, 설사 문제에선 트리처럼 묘사해도, 그래프로 우선 구현해야한다. 
+- 부모-자식 순의 계층성 또는 단방향성을 지키면서 인풋을 주는가? 트리 : 계층 모델, DAG
+- 간선 정보는 정점 개수 -1 인가 ? 트리 : 최소 연결 트리 
+- loop나 circuit이 없이 주는가? 있다면, 잘못된 정보 처리해야한다. 트리 : DAG
+
+
+# tree vs No Only Tree(= graph)
+계층 모델 vs 네트워크 모델
+Directed Acyclic Graph VS DAG or not ; 참고로 무방향(=양방향)은 유방향(=단방향) 반대
+
+부모-자식 vs 부모자식 or not
+
+# tree 관련 공식
+1. dict tree의 경우, 키값들은 루트 노드 또는 inner 노드
+2. dict reversed tree의 경우, 키값들은 inner노드 또는 leaf 노드
