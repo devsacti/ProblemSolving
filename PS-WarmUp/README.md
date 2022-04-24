@@ -35,9 +35,7 @@ from computer algorithms to comprehension of problem
 
 dfs-bfs
 
-=> 바이러스(dfs),DFS와 BFS 
-
-+ 'dfs based on stack VS dfs based on recursive(본질은 같다!)'
+=> 바이러스(dfs),DFS와 BFS ; 'dfs based on stack VS dfs based on recursive(본질은 같다!)'
 
 dfs-bfs를 활용한 그래프 속 트리 도출 그리고 분석
 
@@ -80,19 +78,17 @@ baseballgame !! 문제 해석에 따른 다중 for 문 구현
 
 bingo !! 2차원에 대한 가로,세로,대각선 접근방식 구현
 
-## effective and useful implementation records [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/Useful_Impl_Records)
+
+## Background
+#### [ps1](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps1)
+
+#### [ps2](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps2)
+
+#### [ps3](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps3)
+
+## the Related
+#### effective and useful implementation records [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/Useful_Impl_Records)
 
 handlingMatrix
 
 how to describe the vector in 2d
-
-
-## Background
-#### ps1
-[goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps1)
-
-#### ps2
-[goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps2)
-
-#### ps3
-[goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps3)
