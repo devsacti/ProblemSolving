@@ -1,4 +1,5 @@
-## ps1 Comprehension about Problem experience : example || Error and Solution
+## ps1 Comprehension about Problem experience
+Examples or 'Error and Solution'
 
 ### ps1.1 Analsis == 문제 눈으로 선그으면서 읽고, 개별 조건에 대한 명시적 이해
 

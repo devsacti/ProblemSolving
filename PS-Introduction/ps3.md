@@ -4,7 +4,7 @@
 
 시간 상 대체로 ps3을 진행하면서 ps1,2를 하게되는데, 결과적으론 순환구조에 따른다.
 
-* [PS-WarmUp ps3 check]()
-
 ## the related experiences
-[goto](ps3_major_experience.md)
+[ps3 major experience](ps3_major_experience.md)
+
+[useful_experience](ps3_solutions)

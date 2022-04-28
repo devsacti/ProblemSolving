@@ -2,9 +2,9 @@
 
 [ps1 : Comprehension about Problem](./PS-Introduction/ps1.md)
 
-[ps1 : Applying computer algorithms to Comprehension](./PS-Introduction/ps2.md)
+[ps2 : Applying computer algorithms to Comprehension](./PS-Introduction/ps2.md)
 
-[ps1 : Implemetation](./PS-Introduction/ps3.md)
+[ps3 : Implemetation](./PS-Introduction/ps3.md)
 
 ## major PS practice
 [PS-WarmUp](./PS-WarmUp)

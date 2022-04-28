@@ -1,4 +1,5 @@
-## ps3 Implemetation experience : example || Error and Solution
+## ps3 Implemetation experience
+Examples or 'Error and Solution'
 
 #### Error and Solution 1
 Error : shallow copy 및 인덱스 초기화(특히 다중 반복문 내)
