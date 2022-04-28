@@ -1,16 +1,15 @@
 # My Problem Solving cycle : step 1 => 2 => 3 => 1
 
-[ps1](https://github.com/devsacti/ProblemSolving/blob/main/ps1.md) : Comprehension about Problem
+[ps1 : Comprehension about Problem](./PS-Introduction/ps1.md)
 
-[ps2](https://github.com/devsacti/ProblemSolving/blob/main/ps2.md) : Applying computer algorithms to Comprehension
+[ps1 : Applying computer algorithms to Comprehension](./PS-Introduction/ps2.md)
 
-[ps3](https://github.com/devsacti/ProblemSolving/blob/main/ps3.md) : implemetation
-
+[ps1 : Implemetation](./PS-Introduction/ps3.md)
 
 ## major PS practice
-[PS-WarmUp](https://github.com/devsacti/ProblemSolving/tree/main/PS-WarmUp)
+[PS-WarmUp](./PS-WarmUp)
 
-[PS-Pool](https://github.com/devsacti/ProblemSolving/tree/main/PS-Pool)
+[PS-Pool](./PS-Pool)
 
 ## Background
 [Algorithms](https://github.com/devsacti/Algorithms)

@@ -1,7 +1,7 @@
 # Problem Solving WarmUp to remind key points
 * 개인적으로 실제 코테에서는 3 1 2 again 3의 순환을 거치므로, 이와같은 순서를 우선하기 희망
 
-## ps1-oriented
+## [ps1-oriented ; Comprehension about Problem](./ps1)
 #### 예제 케이스에 속지 마라
 class president !! 예제(부분)는 5행 5열이지만, 실제(전체) 문제 조건은 n행 5열이다.
 
@@ -85,10 +85,3 @@ bingo !! 2차원에 대한 가로,세로,대각선 접근방식 구현
 #### [ps2](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps2)
 
 #### [ps3](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps3)
-
-## the Related
-#### effective and useful implementation records [goto](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/Useful_Impl_Records)
-
-handlingMatrix
-
-how to describe the vector in 2d
