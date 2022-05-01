@@ -3,28 +3,27 @@ reference : ?
 
 ps1. comprehension about problem
 ps1.1 analysis
-leaf 부터 inner node들을 거쳐 root node까지 이어지는 형태
-leaf를 가진 부모노드의 weight는 그들 자식들의 weight의 합으로 정의
-root node의 넘버는 1
+    leaf 부터 inner node들을 거쳐 root node까지 이어지는 형태
+    leaf를 가진 부모노드의 weight는 그들 자식들의 weight의 합으로 정의
+    root node의 넘버는 1
 
-주어진 물의 양이 트리에서 종합된 weight으로 나눠질때, leaf에 할당되는 양을 산출
-단, 나눠지지 않으면 -1
+    트리에서 종합된 weight가 주어진 물의 양의 약수일 때, leaf에 할당되는 양을 산출, 단, 나눠지지 않으면 -1
 
 ps1.2 drawing pattern ~ exceptions
-child node의 weight를 1로 간주하여, parent node로 전파
+    child node의 weight를 1로 간주하여, parent node로 전파
 
 ps2. utilizing and integration of computer algorithms
 ps2.1. utilizing
-module1 : from Vertex,edge,which is not directed, to graph to tree
-module2 : finding leaf
+    module1 : from Vertex,edge,which is not directed, to graph to tree
+    module2 : finding leaf
 
-!! 정형화된 조건에서 dfs는 recursive 기반 bruteforce로 이해가능하다.
+    !! 정형화된 조건에서 dfs는 recursive 기반 bruteforce로 이해가능하다.
 
-module3 : propagate the weight of leaf to parent and sum the weight
-module4 : estimate whether given water is divided by sum of weight
+    module3 : propagate the weight of leaf to parent and sum the weight
+    module4 : estimate whether given water is divided by sum of weight
 
 ps2.1. integration
-module 1,2,3,4
+    module 1,2,3,4
 
 ps3. Impl
 '''
@@ -38,7 +37,8 @@ def make_tree(graph,visited,s):
     tmp_reversed_tree=defaultdict(list)
     
     visited[s]=1
-    q=deque();q.append(s)
+    q=deque()
+    q.append(s)
     
     while(q):
         now=q.popleft()
@@ -54,6 +54,7 @@ def make_tree(graph,visited,s):
     return tmp_tree,tmp_reversed_tree
     
 # module 2 graph dfs 순회를 통해서도 leaf를 찾을 수 있고, 큰 차이없으나 일단 트리
+# dfs는 간편한 dfs 함수형태가 타협되는듯함
 def find_leaf(tree, visited,now,leafs):
       # 방문처리
       visited[now]=1
@@ -75,9 +76,8 @@ def find_leaf(tree, visited,now,leafs):
       # 현재 노드 주변 탐색 recursive of dfs
       for adj in tree[now]:
           if(visited[adj]==0):
-              leafs=find_leaf(tree, visited,adj,leafs)
+              find_leaf(tree, visited,adj,leafs)
               
-      return leafs
       
 # module 3 ; bfs based on reversed_tree
 # tree 특성상 visited 불필요하나, 상기를 위해 기입
@@ -144,7 +144,7 @@ if __name__=="__main__":
     visited=[0]+[0 for _ in range(n)]
     now=1
     leafs=[]
-    leafs=find_leaf(tree, visited,now,leafs)
+    find_leaf(tree, visited,now,leafs)
     # print(leafs)
     
     # module 3

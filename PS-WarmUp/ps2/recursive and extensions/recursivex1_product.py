@@ -59,12 +59,20 @@ def recursive(depth, limit, result):
         pass
 
 if __name__=="__main__":
+    # if n is 3, r is 2
+    #
+    #    1   2
+    # 1  a   a
+    # 2  b   b
+    # 3  c   c
+    # 
+    # n is row, r is col
     n,r = map(int, input().split())
 
     global samplespace, results
 
     samplespace=string.ascii_lowercase[:n]
-    # print(samplespace)
+    print(samplespace)
     results=[]
 
     # applying product of itertools
@@ -72,7 +80,7 @@ if __name__=="__main__":
     # 대체로 백트래킹 조건이 1개라도 존재하면 무용지물이 되서 활용도가 낮다.
     # 그렇기에 recursive 구조의 custom product도 학습한다.
     results=list(product(samplespace,repeat=r))
-    # print(results)
+    print("product of itertools",results)
 
     depth=0
     limit=r

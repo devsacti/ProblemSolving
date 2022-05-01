@@ -6,11 +6,9 @@ from collections import defaultdict
 from collections import deque
 # dijstra : bfs + priority queue(heap)
 from heapq import *
-import heapq
 
 ## heapq는 오름차순으로 주어진 값을 정렬하는 최소힙
 heap=[1,2,3,4,5]
-heapq.heapify(heap)
 heapify(heap)
 # or
 pq=[]
@@ -65,7 +63,7 @@ def dijkstra(graph,s,shortest,*arg):
         
         # part of 1
         # candidate of shortest when we visit now node
-        cand_shortest_now, now = heapq.heappop(pq)
+        cand_shortest_now, now = heappop(pq)
               
         if(cand_shortest_now>shortest[now]): 
             continue

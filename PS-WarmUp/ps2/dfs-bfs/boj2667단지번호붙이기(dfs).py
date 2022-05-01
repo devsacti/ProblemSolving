@@ -3,28 +3,28 @@ reference : https://www.acmicpc.net/problem/2667
 
 ps1. comprehension
 ps1.1. analysis
-n*n의 정사각형
-0 based indexing 
+    n*n의 정사각형
+    0 based indexing 
 
 ps1.2. drawing pattern, exception
-2차원 매트릭스를 그래프로 이해
-=> 모든 노드를 방문하면서, 아파트 노드에 대해선 인접노드를 확인하여, 노드들로 구성된 단지를 도출
+    2차원 매트릭스를 그래프로 이해
+    => 모든 노드를 방문하면서, 아파트 노드에 대해선 인접노드를 확인하여, 노드들로 구성된 단지를 도출
 
 ps2. applying computer algorithms
 ps2.1. utilization
-module 1 : 인풋값 2차원 리스트화, 아파트 단지를 표시할 상응 매트릭스 선언
-module 2 : dfs를 통한 순회와 아파트 단지 표기, 
+    module 1 : 인풋값 2차원 리스트화, 아파트 단지를 표시할 상응 매트릭스 선언
+    module 2 : dfs를 통한 순회와 아파트 단지 표기, 
 
-!! 이때 dfs 1번 호출 당, 아파트 플래그 넘버는 일정해야한다 => 외부로부터 constant한 값을 사용하는 방식이 적절하다고 생각(전역변수) 왜냐하면 호출마다 변동하는 게 아니라 일정해야하니까
-!! 한편, cnt_node는 dfs 호출당 증가하는 변수임, 이는 recursive의 depth 변수처럼 이해하고, 이와같이 함수를 구성한다.
-=> 하지만, 문제는 가변적인 limit을 가지고있어서, 여차저차 일단 global로 선언
+    !! 이때 dfs 1번 호출 당, 아파트 플래그 넘버는 일정해야한다 => 외부로부터 constant한 값을 사용하는 방식이 적절하다고 생각(전역변수) 왜냐하면 호출마다 변동하는 게 아니라 일정해야하니까
+    !! 한편, cnt_node는 dfs 호출당 증가하는 변수임, 이는 recursive의 depth 변수처럼 이해하고, 이와같이 함수를 구성한다.
+    => 하지만, 문제는 가변적인 limit을 가지고있어서, 여차저차 일단 global로 선언
 
-module 3 : 아파트 단지 수와 단지별 노드 수 출력
+    module 3 : 아파트 단지 수와 단지별 노드 수 출력
 
-!! 단지 수는 오름차순으로 출력
+    !! 단지 수는 오름차순으로 출력
 
 ps2.2. integration with Time complexity
-module 1,2,3 
+    module 1,2,3 
 
 ps3. Impl
 '''

@@ -8,7 +8,7 @@ combinations and bruteforce
 pattern2.
 custom combinations
 
-문자 그대로 permutaions의 조건에 '순서를 고려하지 않는 것'이 추가되는 것에 집중한다면,
+문자 그대로 permutaions의 조건에 '중복과 순서를 고려하지 않는 것'이 추가되는 것에 집중한다면,
 개별 result들을 정렬을 통해 순서를 통일 후하여 오름 차순에서 비교한 뒤 없을 때 results에 저장할 수 있다.
 
 혹은, 말그대로 기존에 사용한 조합인지 아닌지를 판단할 변수_choosed_를 활용하여 개별 result가 이미 사용된 조합인지 체크한다.

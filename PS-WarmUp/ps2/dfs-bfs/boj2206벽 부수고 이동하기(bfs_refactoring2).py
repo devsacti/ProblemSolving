@@ -1,5 +1,5 @@
 '''
-!! 해당 copy 버전은 시작점과 끝점이 다르고, 시작점이 포함되냐 안되냐가 다르다
+!! 해당 refactoring2 버전은 시작점과 끝점이 다르고, 시작점이 포함되냐 안되냐가 다르다
 
 reference : https://www.acmicpc.net/problem/2206
 
