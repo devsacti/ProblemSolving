@@ -1,5 +1,4 @@
 # Problem Solving WarmUp to remind key points
-* 개인적으로 실제 코테에서는 3 1 2 again 3의 순환을 거치므로, 이와같은 순서를 우선하기 희망
 
 ## [ps1-oriented : Comprehension about Problem](./ps1)
 #### 예제 케이스와 실제
@@ -8,7 +7,7 @@ class president !! 예제(부분)는 5행 5열이지만, 실제(전체) 문제 �
 #### 수학적 지식으로 패턴 도출하기
 streetree !! (Hint GCD * LCM = a * b)
 
-## [ps2-oriented : Applying computer algorithms]()
+## [ps2-oriented : Applying computer algorithms](./ps2)
 from computer algorithms to comprehension of problem
 
 #### computer algorithm : sorting and binarysearch 
@@ -51,7 +50,7 @@ floyd warshall => 파티
 ## computer algorithm : dynamic programming
 dp => makenum, sum_rectangular
 
-# [ps3-oriented : Implementation]()
+# [ps3-oriented : Implementation](./ps3)
 구현 중의 기본 문법이나 쉘로우 카피, 인덱스, 초기화 설정, library 활용 등에 대해서 집중하는 단계
 
 ## 주어진 정보에 적합한 자료구조 구현
@@ -65,8 +64,8 @@ baseballgame
 bingo
 
 ## Background
-#### [ps1](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps1)
+#### [ps1](https://github.com/devsacti/ProblemSolving/blob/main/PS-Introduction/ps1.md)
 
-#### [ps2](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps2)
+#### [ps2](https://github.com/devsacti/ProblemSolving/blob/main/PS-Introduction/ps2.md)
 
-#### [ps3](https://github.com/devsacti/Algorithms-ProblemSolving/tree/main/ProblemSolving/PS-WarmUp/ps3)
+#### [ps3](https://github.com/devsacti/ProblemSolving/blob/main/PS-Introduction/ps3.md)
