@@ -66,7 +66,8 @@ def dijstra(graph, s, shortests):
         # 이제는 이 now까지의 최단거리를 바탕으로 adjacent next의 최단거리를 도출하는 과정
         for adj in graph[now]:
             interval, next = adj
-            # 지금까지 온 거리이자 최단거리 + 다음 인접 노드까지의 거리로 adjacent next vertext 최소 후보값 정의
+            # 지금까지 온 거리이자 최단거리 + 다음 인접 노드까지의 거리로 adjacent next vertext 현상태의 유효한 최소값 정의
+            # 다만 앞서 말한 위와같은 노드들 간 관계로, 상단 if를 통해 속아질수있다.
             cand_shortest=shortests[now]+interval
           
             if(cand_shortest<shortests[next]):
