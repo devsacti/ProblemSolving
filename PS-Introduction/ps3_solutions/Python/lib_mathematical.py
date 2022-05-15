@@ -4,10 +4,6 @@ import string
 #ascii_lowercaseList=string.ascii_lowercase
 
 from math import *
-import math
-#math.sqrt
-#math.gcd
-#math.lcm
 
 # max, min, abs
 min(-5, 3, 0, 3, -5, key=abs)

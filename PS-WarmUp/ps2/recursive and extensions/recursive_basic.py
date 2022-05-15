@@ -34,3 +34,40 @@ def solution(numbers, target):
     recursive(depth,limit,0,target)
     
     return answer
+
+
+#bruteforce
+def judge(result,depth,inequals):
+    window=result[depth-1]+inequals[depth]+result[depth]
+    return eval(window)
+
+def bruteforce(result,depth,limit, inequals):
+  if(depth>=limit):
+    print('arrive')
+    # print(result)
+  else:
+    for numchar in '123456789':
+      result[depth]=numchar
+      print(' '*depth,end='')
+      print('given',result)
+      print(' '*depth,end='')
+      print('depth',depth)
+
+      if(depth==0):
+        bruteforce(result[:],depth+1,limit, inequals)
+      
+      result[depth]='*'
+      print(' '*depth,end='')
+      print('remove',result)
+      print(' '*depth,end='')
+      print('depth',depth)
+      print('--')
+      
+        
+      # else:
+      #   token=judge(result,depth,inequals)
+      #   print(token)
+      #   if(token):
+      #     bruteforce(result[:],depth+1,limit, inequals)
+      #   else:
+      #     return

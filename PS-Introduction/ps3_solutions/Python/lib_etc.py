@@ -7,6 +7,15 @@ e2 = sorted(a, key = lambda person : (person[0],person[2], -person[1]))
 ## (2, 2, 3)
 ## (4, 1, 4)
 
+# dictionary sort
+d1 = sorted(d.items())
+d1 = sorted(d.items(), reverse=True)
+
+d2 = sorted(d.items(), key=lambda x: x[1])
+d2 = sorted(d.items(), key=lambda x: x[1], reverse=True)
+
+# 출처: https://blockdmask.tistory.com/566 [개발자 지망생]
+
 ##  우선 각 인스턴스의 0번째값으로만 인덱스 정렬, 그 다음 
 
 from bisect import bisect_left
@@ -28,42 +37,6 @@ from bisect import bisect_right
 
 # 출처: https://programming119.tistory.com/196 [개발자 아저씨들 힘을모아]
 ## and remind parameter binary search by custom function
-
-#bruteforce
-def judge(result,depth,inequals):
-    window=result[depth-1]+inequals[depth]+result[depth]
-    return eval(window)
-
-def bruteforce(result,depth,limit, inequals):
-  if(depth>=limit):
-    print('arrive')
-    # print(result)
-  else:
-    for numchar in '123456789':
-      result[depth]=numchar
-      print(' '*depth,end='')
-      print('given',result)
-      print(' '*depth,end='')
-      print('depth',depth)
-
-      if(depth==0):
-        bruteforce(result[:],depth+1,limit, inequals)
-      
-      result[depth]='*'
-      print(' '*depth,end='')
-      print('remove',result)
-      print(' '*depth,end='')
-      print('depth',depth)
-      print('--')
-      
-        
-      # else:
-      #   token=judge(result,depth,inequals)
-      #   print(token)
-      #   if(token):
-      #     bruteforce(result[:],depth+1,limit, inequals)
-      #   else:
-      #     return
 
 #dynamic programming
 def dpMarble(nums):

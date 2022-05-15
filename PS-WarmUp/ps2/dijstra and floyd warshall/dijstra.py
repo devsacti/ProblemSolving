@@ -68,12 +68,12 @@ def dijstra(graph, s, shortests):
             interval, next = adj
             # 지금까지 온 거리이자 최단거리 + 다음 인접 노드까지의 거리로 adjacent next vertext 현상태의 유효한 최소값 정의
             # 다만 앞서 말한 위와같은 노드들 간 관계로, 상단 if를 통해 속아질수있다.
-            cand_shortest=shortests[now]+interval
+            shortest_adj=shortests[now]+interval
           
-            if(cand_shortest<shortests[next]):
+            if(shortest_adj<shortests[next]):
                 # if문 안에 들어온 순간 adjacent next의 cand_shortest는 shortest 확정
-                shortests[next]=cand_shortest
-                heappush(pq,(cand_shortest,next))
+                shortests[next]=shortest_adj
+                heappush(pq,(shortest_adj,next))
 
 
 if __name__=="__main__":
