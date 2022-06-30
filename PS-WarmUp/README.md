@@ -10,7 +10,7 @@ streetree !! (Hint GCD * LCM = a * b)
 ## [ps2-oriented : Applying computer algorithms](./ps2)
 from computer algorithms to comprehension of problem
 
-## Computer Algorithms
+### Computer Algorithms
 * sorting and binarysearch 
 * recursive extensions
 * Depth First Search - Breadth First Search
@@ -18,7 +18,6 @@ from computer algorithms to comprehension of problem
 * dijstra and floyd warshall
 * dynamic programming
 
-##
 
 #### computer algorithm : sorting and binarysearch 
 
@@ -62,10 +61,6 @@ dp => makenum, sum_rectangular
 
 # [ps3-oriented : Implementation](./ps3)
 구현 중의 기본 문법이나 쉘로우 카피, 인덱스, 초기화 설정, library 활용 등에 대해서 집중하는 단계
-
-* 주어진 정보에 적합한 자료구조 구현
-* 적합한 다중 for문 구현
-* 2차원 matrix 접근과 활용
 
 #### 주어진 정보에 적합한 자료구조 구현
 숫자피라미드, class president
