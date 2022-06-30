@@ -24,6 +24,8 @@ Coding Test는 에서는 그 반대라 생각
 ## major PS practice
 [PS-WarmUp](./PS-WarmUp)
 
+[PS-WarmUpExtension](./PS-WarmUpExtention)
+
 [PS-Pool](./PS-Pool)
 
 ## Background

@@ -13,7 +13,10 @@ from computer algorithms to comprehension of problem
 ### Computer Algorithms
 * sorting and binarysearch 
 * recursive extensions
+* Topology Sort
+* dynamic programming
 * Depth First Search - Breadth First Search
+* dijstra and floyd warshall
 ###
 
 #### computer algorithm : sorting and binarysearch 
@@ -27,6 +30,13 @@ from computer algorithms to comprehension of problem
 재귀구조와 백트래킹 => bruteforce ; recursive_series(product, permutaions,combinations,factorial)
 ,N-queens(반복필수)
 
+#### computer algorithm : Topology Sort
+
+Topology Sort(위상정렬) => 동굴탐험
+
+#### computer algorithm : dynamic programming
+dp => makenum(반복필수), sum_rectangular
+
 #### computer algorithm : Depth First Search - Breadth First Search
 
 dfs-bfs => 바이러스,DFS와 BFS
@@ -34,6 +44,19 @@ dfs-bfs => 바이러스,DFS와 BFS
 dfs-bfs를 활용한 그래프 속 트리 도출 그리고 분석 => Graph to Trees and analyze(반복필수)
 
 인접리스트로 구체화되지 않은 그래프에 대해 dfs-bfs 적용하기(혹은 2차원 매트릭스를 그래프로 간주하고 분석하기)  => 단지 번호 붙이기(반복필수), 벽 부수고 이동하기(반복필수)
+
+###### dfs-bfs related
+
+결과는 같더라도, 문맥상 dfs가 더 적절한 경우와 bfs가 더 적절한 경우가 존재한다고 생각, 가령 최단거리 연관 문제는 bfs쪽이 와닿거나 효과적이라고 생각 
+
+dfs-bfs 순회과정에서 '2d matrix to graph'로 자료구조화가 가능하나 코테에 부적합
+
+'dfs based on stack VS dfs based on recursive' => 본질은 같고 후자가 테스트에 적합
+
+#### computer algorithm : dijstra and floyd warshall
+dijstra(feat. heap) => 파티(반복필수)
+
+floyd warshall => 파티
 
 # [ps3-oriented : Implementation](./ps3)
 구현 중의 기본 문법이나 쉘로우 카피, 인덱스, 초기화 설정, library 활용 등에 대해서 집중하는 단계
