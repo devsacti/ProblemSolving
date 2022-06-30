@@ -1,6 +1,10 @@
 # ps1 : Comprehension about Problem
 (TO ME)정확한 문제 해석
 
+* Analysis
+* Drawing pattern,exception
+* Fittest Approach
+
 ## ps1.1 Analysis
 문제 눈으로 선그으면서 개별 조건과 상황에 대한 명시적 '반복' 이해
 
@@ -19,17 +23,17 @@
 #### !! 입출력 예시 !!
 주어진 Input 형태를 반복 분석하며, 적절한 자료형태를 탐색
 
-가령, 개념적 인접 행렬과 인접 리스트, 코드화를 지향하지 않음
+다만, 개념적 인접 행렬과 인접 리스트, 코드화를 지향하지 않음
 
 => 최대한 적합하게 구조화된 자료형태 상정
 
 #### 참고사항
 여집합, 역순 우선, 벤다이어그램도 필수
 
-## ps1.2 drawing pattern, exceptions and approach
+## ps1.2 drawing pattern, exceptions
 패턴 찾기, 예외처리 그리고 접근
 
-## drawing pattern
+#### drawing pattern
 -패턴(또는 규칙, 로직, 공식 등) 찾기 :
 
 주어진 예시와 조건들 간 함축적 관계에서 패턴을 도출하거나 관련 이론을 통해 공식화 또는 모듈화 한다.
@@ -42,16 +46,16 @@
 
 *coding test에서는 시간상 주로 머릿 속으로만 수행, ps2.2에서 모듈 간 연결관계를 개괄 시도
 
-## drawing exceptions
+#### drawing exceptions
 -예외처리 : 앞선 과정을 통해 구조화된 틀을 바탕으로 예외상황들을 찾고 처리한다.
 
 *개인적으로 이 부분은 많은 경험이 쌓여야 능력이 성장하는 듯하다.
 
-## Approach 
+## ps1.3 Fittest Approach
 
 입력값 범위 등을 바탕으로 접근방식 탐색
 
-가령, 완전탐색 또는 이진탐색, 탐욕법 등 접근방식을 결정한다. 
+가령, 완전탐색 또는 이진탐색, 재귀구조와 백트래킹 등 접근방식을 결정한다. 
 
 완전탐색의 경우, 수학공식과같은 명확한 패턴이 없더라도, 문제해결에 있어 중요한 접근방식이라 할 수 있다.
 

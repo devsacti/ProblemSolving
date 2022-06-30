@@ -51,8 +51,7 @@ def dijstra(graph, s, shortests):
         # 이전 탐색을 통해 도출한 현재 지점까지의 최단거리 후보와 현재 노드
         cand_shortest,now=heappop(pq)
         
-        # 아래 if문은 시작노드를 처리하기 위한 if문이 아니라, 아래와같이 어느정도 dijstra가 진행되었을때,
-        # now vertext를 2개의 vertex를 통해 접근가능한 상황을 처리하기 위함이다.
+        # 어느정도 dijstra가 진행되었을때, now vertext를 2개의 vertex를 통해 접근가능한 상황을 처리하기 위함으로 생각하면 좋다
         ##
         ##    o ; prev1
         ##         o ; now vertext
@@ -63,7 +62,7 @@ def dijstra(graph, s, shortests):
         if(cand_shortest>shortests[now]):continue
 
         # 위 if문을 통과함으로서 now까지의 최단거리로서 인정받은 것이고,
-        # 이제는 이 now까지의 최단거리를 바탕으로 adjacent next의 최단거리를 도출하는 과정
+        # 이제는 이 now까지의 최단거리를 바탕으로 adjacent next의 최단거리를 선별 및 도출하는 과정
         for adj in graph[now]:
             interval, next = adj
             # 지금까지 온 거리이자 최단거리 + 다음 인접 노드까지의 거리로 adjacent next vertext 현상태의 유효한 최소값 정의

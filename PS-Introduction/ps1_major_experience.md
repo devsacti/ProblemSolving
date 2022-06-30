@@ -9,8 +9,8 @@ as-is : print('No')
 
 to-be : print('NO')
 
-#### Error and Solution2 : example misunderstanding => imagine another example aside from given
-!! 예제의 함정 : 주어진 예제에만 맞춰서 나도 모르게 전체 패턴을 놓침 !!
+#### Error and Solution2 : example misunderstanding => Stick to given conditions, and imagine another example aside from given
+!! 예제의 함정 : 문제조건에는 그러한 제한을 두지 않았는데, 주어진 예제에만 맞춰서 나도 모르게 전체 패턴을 놓침 !!
 
 우선 주어진 예제말고 다른 것도 스스로 생각한다. 그리고 문제를 많이 푼다.
 
@@ -30,14 +30,14 @@ L3 maxofarr 문제에서
 
 ### ps1.2 drawing pattern,exceptions == 패턴 찾기와 예외처리
 
-#### example 1
+#### Basic conception : what is drawing pattern ?
 가령, 주어진 조건들이 아래와 같고 특정 인덱스의 값을 리턴을 요구 할 때,
  
 Condition1 : 주어진 1번째항과 2번째 항의 범위는 정수(+주어진 예제는 모두 자연수)
 
 Condition2 : 3번째는 1번째,2번째의 합으로 정의,,,,n번째는 n-1과 n-2번째의 합으로 정의
 
-=> 피보나치 수열 이론과 dp 접목하여 이해하기
+=> '피보나치 수열 이론'과 dp 접목하여 이해하기
 
 만약 추가로 
 

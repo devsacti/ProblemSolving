@@ -12,7 +12,7 @@ max(nums, key=abs)
 sqrt(x)
 # x**(1/2)
 
-# gcd, lcm +reduce ; a*b = L//G
+# gcd, lcm +reduce ; a*b = L*G
 from functools import reduce
 global_gcd=reduce(lambda x,y:gcd(x,y),li_interval)
 
@@ -23,21 +23,21 @@ from itertools import permutations
 
 from string import *
 # product cases, combinations cases, permutations cases
-sample=[i for i in range(1,n+1)]
-sample2=[char for char in ascii_lowercase]
-print(sample)
-print(sample2)
+samplespace=[i for i in range(1,n+1)]
+samplespace2=[char for char in ascii_lowercase]
+print(samplespace)
+print(samplespace2)
 
-allcases=list(product(sample,sample2))
+allcases=list(product(samplespace,samplespace2))
 #or
-totalcases=list(product(sample,repeat=3))
+totalcases=list(product(samplespace,repeat=3))
 print(allcases)
 
 r=3
-permutations_cases=list(permutations(sample,r))
+permutations_cases=list(permutations(samplespace,r))
 print(permutations_cases)
 print(len(permutations_cases))
 
-combinations_cases=list(combinations(sample,r))
+combinations_cases=list(combinations(samplespace,r))
 print(combinations_cases)
 print(len(combinations_cases))
