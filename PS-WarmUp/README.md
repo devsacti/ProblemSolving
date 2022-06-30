@@ -60,6 +60,7 @@ floyd warshall => 파티
 # [ps3-oriented : Implementation](./ps3)
 구현 중의 기본 문법이나 쉘로우 카피, 인덱스, 초기화 설정, library 활용 등에 대해서 집중하는 단계
 
+## Basic
 #### 주어진 정보에 적합한 자료구조 적용 및 구현하기
 * 숫자피라미드, class president
 
@@ -68,6 +69,10 @@ floyd warshall => 파티
 
 #### 2차원 matrix 접근과 활용 적용 및 구현하기
 * bingo
+
+## Extensions
+Basic과 달리, ps1,ps2를 모두 아우르는 문제들,
+[PS-POOL](../PS-Pool/)에서 반복학습
 
 ## Background
 #### [ps1](https://github.com/devsacti/ProblemSolving/blob/main/PS-Introduction/ps1.md)
