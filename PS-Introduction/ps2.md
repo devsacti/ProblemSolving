@@ -1,12 +1,12 @@
 # ps2 : Integrating computer algorithms to simulate Comprehension
 (TO ME) (인간적) 해석에 컴퓨터 알고리즘들을 연결하여 컴퓨터 공간에 시뮬레이션하는 것
 
+## 
+내가 생각하는 컴퓨터 알고리즘 : '프로그래밍 언어로 구현가능한' 자료구조, bfs같은 알고리즘, 그리고 주어진 상황 맞춤형 알고리즘 모두
+
 * Applying and modularizing computer algorithms
 * Integrating modules with Time Complexity
 * humble approach to hidden hidden case
-
-## 
-내가 생각하는 컴퓨터 알고리즘 : '프로그래밍 언어로 구현가능한' 자료구조, bfs같은 알고리즘, 그리고 주어진 상황 맞춤형 알고리즘 모두
 
 ## ps2.1 Applying and modularizing computer algorithms
 한번에 다 만들려고 하지말고,퍼즐형태이든, 확장형태이든 Unit 단위로 쪼개서 모듈을 구상한다.
