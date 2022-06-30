@@ -1,12 +1,17 @@
-'''
-dfs를 수단이나 과정말고 결과를 이해하는 데 활용 ; 추상적
+# ps1.
 
-구현은 recursive라고 생각, dfs의 기본 형태 및 정의에서 너무멀다
+## ps1.2
+## dfs를 수단이나 과정말고 결과를 이해하는 데 활용
+## dfs로 구현했다고 하면, 주어지거나 전처리를 통해 자료구조화된 노드, 간선, 그래서 트리나 그래프 등의 개념이 전제되나 아래는 너무 추상적
+## 단, 구현은 Recursive
 
-dfs는 자료구조화된 노드, 간선, 그래서 트리나 그래프 등의 개념이 전제되나
+# ps2.
 
-아래에는 input에 있어 트리(혹은 그래프)가 전혀 없다.
-'''
+# ps3.
+
+# ps4.
+# 프로그래머스 타겟넘버
+# https://programmers.co.kr/learn/courses/30/lessons/43165
 
 # global ; answer
 def recursive(depth,limit, result,target):
@@ -34,40 +39,3 @@ def solution(numbers, target):
     recursive(depth,limit,0,target)
     
     return answer
-
-
-#bruteforce
-def judge(result,depth,inequals):
-    window=result[depth-1]+inequals[depth]+result[depth]
-    return eval(window)
-
-def bruteforce(result,depth,limit, inequals):
-  if(depth>=limit):
-    print('arrive')
-    # print(result)
-  else:
-    for numchar in '123456789':
-      result[depth]=numchar
-      print(' '*depth,end='')
-      print('given',result)
-      print(' '*depth,end='')
-      print('depth',depth)
-
-      if(depth==0):
-        bruteforce(result[:],depth+1,limit, inequals)
-      
-      result[depth]='*'
-      print(' '*depth,end='')
-      print('remove',result)
-      print(' '*depth,end='')
-      print('depth',depth)
-      print('--')
-      
-        
-      # else:
-      #   token=judge(result,depth,inequals)
-      #   print(token)
-      #   if(token):
-      #     bruteforce(result[:],depth+1,limit, inequals)
-      #   else:
-      #     return
