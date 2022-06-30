@@ -76,6 +76,6 @@ Basic과 달리, ps1,ps2를 모두 아우르는 문제들,
 [PS-POOL](../PS-Pool/)에서 반복학습
 
 # Background
-* [ps1](https://github.com/devsacti/ProblemSolving/blob/main/PS-Introduction/ps1.md)
+* [ps1Extensions](https://github.com/devsacti/ProblemSolving/blob/main/PS-Introduction/ps1Extentions.md)
 * [ps2](https://github.com/devsacti/ProblemSolving/blob/main/PS-Introduction/ps2.md)
 * [ps3](https://github.com/devsacti/ProblemSolving/blob/main/PS-Introduction/ps3.md)
