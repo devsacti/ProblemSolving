@@ -10,6 +10,16 @@ streetree !! (Hint GCD * LCM = a * b)
 ## [ps2-oriented : Applying computer algorithms](./ps2)
 from computer algorithms to comprehension of problem
 
+## Computer Algorithms
+* sorting and binarysearch 
+* recursive extensions
+* Depth First Search - Breadth First Search
+* Topology Sort
+* dijstra and floyd warshall
+* dynamic programming
+
+##
+
 #### computer algorithm : sorting and binarysearch 
 
 정렬 후 이진탐색 속 start,end의 역할, 그리고 활용 => 랜선자르기
@@ -42,25 +52,28 @@ dfs-bfs 순회과정에서 '2d matrix to graph'로 자료구조화가 가능하�
 
 'dfs based on stack VS dfs based on recursive' => 본질은 같고 후자가 테스트에 적합
 
-## computer algorithm : dijstra and floyd warshall
+#### computer algorithm : dijstra and floyd warshall
 dijstra(feat. heap) => 파티
 
 floyd warshall => 파티
 
-## computer algorithm : dynamic programming
+#### computer algorithm : dynamic programming
 dp => makenum, sum_rectangular
 
 # [ps3-oriented : Implementation](./ps3)
 구현 중의 기본 문법이나 쉘로우 카피, 인덱스, 초기화 설정, library 활용 등에 대해서 집중하는 단계
 
-## 주어진 정보에 적합한 자료구조 구현
+* 주어진 정보에 적합한 자료구조 구현
+* 적합한 다중 for문 구현
+* 2차원 matrix 접근과 활용
 
+#### 주어진 정보에 적합한 자료구조 구현
 숫자피라미드, class president
 
-## 적합한 다중 for문 구현
+#### 적합한 다중 for문 구현
 baseballgame
 
-## 2차원 matrix 접근과 활용
+#### 2차원 matrix 접근과 활용
 bingo
 
 ## Background
