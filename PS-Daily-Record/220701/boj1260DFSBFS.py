@@ -1,26 +1,12 @@
-'''
-reference : https://www.acmicpc.net/problem/1260
+# Target https://www.acmicpc.net/problem/1260
 
-ps1. comprehension for problem
-ps1.1. analysis
+# ps1. comprehension
+# 정점번호 1~N, 양방향
 
-vertex numbering ; 1 ~ N
-양방향이고, 갈림길에서는 노드 넘버가 작은 순으로 방문
 
-ps1.2. drawing pattern, exception
+# ps2. applying computer algorithms
 
-dfs,bfs
-
-ps2. applying computer algorithms to comprehension
-ps2.1. utilizing and modularizing
-
-module 1 ; recursive
-
-ps2.2. integrations
-ps2.3. humble approach
-
-ps3. Impl
-'''
+# ps3. Impl
 from collections import defaultdict
 from collections import deque
 
