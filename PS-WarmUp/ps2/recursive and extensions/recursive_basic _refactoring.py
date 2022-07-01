@@ -8,30 +8,23 @@
 # ps2.
 
 # ps3.
-
-## recursive 기반 구현의 특징은 depth, limit이다 왜냐하면, 이것이 있어야 무한재귀에 안빠지니까
-## 그외 추가적인 파라미터를 활용하는 것으로 우선 이해
+## 주어진 의미에 충실한 구현 후, 기술적으로 동일한 코드를 압축
 
 # ps4.
 # 프로그래머스 타겟넘버
 # https://programmers.co.kr/learn/courses/30/lessons/43165
 
 # global ; answer
-def recursive(depth,limit, sub_result,target):
+def recursive(depth,limit, result,target):
     global answer, nums
-
+    
     if depth == limit:
-        if sub_result == target:
+        if result == target:
             answer += 1
         return
-    else:            
-        # 현재 방문 노드 + 전제
-        sub_result1= sub_result + nums[depth]
-        recursive(depth+1, limit,sub_result1,target)
-        # 현재 방문 노드 - 전제
-        sub_result2= sub_result - nums[depth]
-        recursive(depth+1, limit,sub_result2,target)
-    
+    else:
+        recursive(depth+1, limit,result+nums[depth],target)
+        recursive(depth+1, limit,result-nums[depth],target)
 
 def solution(numbers, target):
     global answer, nums

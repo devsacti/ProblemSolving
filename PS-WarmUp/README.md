@@ -24,8 +24,9 @@ from computer algorithms to comprehension of problem
 
 #### computer algorithm : recursive extensions
 
-재귀구조와 백트래킹 => bruteforce ; recursive_series(product, permutaions,combinations,factorial)
-,N-queens(반복필수)
+재귀구조 => recursive_series ; basic([반복필수]), product, permutaions,combinations,factorial
+
+재귀구조와 백트래킹 => N-queens(반복필수)
 
 #### computer algorithm : Depth First Search - Breadth First Search
 
