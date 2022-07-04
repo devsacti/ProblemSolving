@@ -40,6 +40,7 @@ def bs(start,end,nums):
     while(s<=e):
         mid=(s+e)//2
         
+        # 변형 및 응용 부분
         total_cnt=0        
         for num in nums:
             total_cnt+=(num//mid)

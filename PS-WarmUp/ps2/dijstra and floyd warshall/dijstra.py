@@ -56,7 +56,8 @@ def dijstra(graph, s, shortests):
         ##    o ; prev1
         ##         o ; now vertext
         ## o ; prev2
-        ##                 o ; next
+        ##                 o ; next1
+        ##                     o ; next2
         ##
         ## prev1을 통해 이미 shortests가 갱신된 후, prev2에서 now를 접근한다면, 아래 if문을 통해서 건너뛴다.
         if(cand_shortest>shortests[now]):continue
@@ -68,7 +69,7 @@ def dijstra(graph, s, shortests):
             # 지금까지 온 거리이자 최단거리 + 다음 인접 노드까지의 거리로 adjacent next vertext 현상태의 유효한 최소값 정의
             # 다만 앞서 말한 위와같은 노드들 간 관계로, 상단 if를 통해 속아질수있다.
             shortest_adj=shortests[now]+interval
-          
+            
             if(shortest_adj<shortests[next]):
                 # if문 안에 들어온 순간 adjacent next의 cand_shortest는 shortest 확정
                 shortests[next]=shortest_adj
