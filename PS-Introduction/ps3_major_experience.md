@@ -52,4 +52,18 @@ Solution : 재귀구조 간 스텝에서 return을 통해 최종 결과값까지
 #### Error and Solution 5 : 'limit이 0 또는 1 인 경우에 한하여 액션한다.' 는 if(limit == 0 or 1) 이 아니다!!!
 Error : 수학적 사고를 컴퓨터로 옮길때, 약간의 표현상 오차를 착각
 
-Solution : limit == (0 or 1)
+위 문법은 판단이 2개이고, limit equals with 0 ? , 1
+1은 언제나 1이므로 언제나 1이다.
+
+한편, 이에 따라 과거에 아래와같이 솔루션을 찾았으나, 운좋게 맞은거였다.
+
+half-Solution : limit == (0 or 1)
+
+상단의 판단은 전체 1개이나, 세부적으로 안에 1개 더있는 형태다
+
+limit equals with (0 or 1)
+	(0 or 1) ; this is always 1
+
+파이썬이 규정한 문법에 따르 정확한 해결책
+
+Solution : limit==0 or limit ==1
